@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ff66" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#062016" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#030a07" stop-opacity="0.98"/>
+    </radialGradient>
+    
+    <linearGradient id="botHead" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14442b"/>
+      <stop offset="50%" stop-color="#0b2819"/>
+      <stop offset="100%" stop-color="#04120a"/>
+    </linearGradient>
+    
+    <linearGradient id="visorGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ff66"/>
+      <stop offset="100%" stop-color="#00b347"/>
+    </linearGradient>
+
+    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff66" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00993d" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" rx="30" fill="url(#bgGlow)" />
+
+  <!-- Cyber Grid Lines Background -->
+  <g stroke="#00ff66" stroke-width="1" opacity="0.15">
+    <path d="M0 100 H500 M0 200 H500 M0 300 H500 M0 400 H500" />
+    <path d="M100 0 V500 M200 0 V500 M300 0 V500 M400 0 V500" />
+  </g>
+
+  <!-- FLOATING HOLOGRAPHIC CARD (LEFT) -->
+  <g transform="translate(60, 140) rotate(-18)">
+    <rect width="90" height="130" rx="14" fill="url(#cardGlow)" stroke="#00ff66" stroke-width="3" filter="url(#neonGlow)"/>
+    <text x="45" y="40" font-family="monospace" font-size="28" text-anchor="middle" fill="#ffffff">🛡️</text>
+    <text x="45" y="75" font-family="sans-serif" font-weight="900" font-size="12" text-anchor="middle" fill="#00ff66">DEFUSE</text>
+    <text x="45" y="95" font-family="sans-serif" font-weight="700" font-size="9" text-anchor="middle" fill="#ffffff">SAFE 100%</text>
+  </g>
+
+  <!-- FLOATING HOLOGRAPHIC CARD (RIGHT) -->
+  <g transform="translate(350, 160) rotate(18)">
+    <rect width="90" height="130" rx="14" fill="url(#cardGlow)" stroke="#ffe600" stroke-width="3" filter="url(#neonGlow)"/>
+    <text x="45" y="40" font-family="monospace" font-size="28" text-anchor="middle" fill="#ffffff">⚡</text>
+    <text x="45" y="75" font-family="sans-serif" font-weight="900" font-size="12" text-anchor="middle" fill="#ffe600">SCAN</text>
+    <text x="45" y="95" font-family="sans-serif" font-weight="700" font-size="9" text-anchor="middle" fill="#ffffff">INTEL 3X</text>
+  </g>
+
+  <!-- CUTE CHIBI CYBER BOT CHARACTER (CENTER) -->
+  <g transform="translate(250, 250)">
+    <!-- Antenna Glow -->
+    <line x1="0" y1="-140" x2="0" y2="-100" stroke="#00ff66" stroke-width="6" filter="url(#neonGlow)" />
+    <circle cx="0" cy="-145" r="12" fill="#00ff66" filter="url(#neonGlow)" />
+    <circle cx="0" cy="-145" r="5" fill="#ffffff" />
+
+    <!-- Head Body -->
+    <rect x="-100" y="-100" width="200" height="160" rx="40" fill="url(#botHead)" stroke="#00ff66" stroke-width="4" filter="url(#neonGlow)"/>
+    
+    <!-- Cute Robot Ears -->
+    <rect x="-120" y="-40" width="20" height="40" rx="6" fill="#00ff66" opacity="0.8" />
+    <rect x="100" y="-40" width="20" height="40" rx="6" fill="#00ff66" opacity="0.8" />
+
+    <!-- Cute Visor Screen -->
+    <rect x="-80" y="-80" width="160" height="110" rx="25" fill="#030a06" stroke="#00ff66" stroke-width="2"/>
+
+    <!-- Kawaii Chibi Visor Eyes (Big Cute Glowing Anime Eyes) -->
+    <!-- Left Eye -->
+    <ellipse cx="-40" cy="-30" rx="22" ry="30" fill="url(#visorGlow)" filter="url(#neonGlow)" />
+    <circle cx="-47" cy="-40" r="8" fill="#ffffff" />
+    <circle cx="-35" cy="-20" r="4" fill="#ffffff" />
+
+    <!-- Right Eye -->
+    <ellipse cx="40" cy="-30" rx="22" ry="30" fill="url(#visorGlow)" filter="url(#neonGlow)" />
+    <circle cx="33" cy="-40" r="8" fill="#ffffff" />
+    <circle cx="45" cy="-20" r="4" fill="#ffffff" />
+
+    <!-- Cute Smiling Mouth -->
+    <path d="M-20 0 Q0 18 20 0" stroke="#00ff66" stroke-width="5" fill="none" stroke-linecap="round" filter="url(#neonGlow)"/>
+
+    <!-- Cute Pink Cyber Blush -->
+    <ellipse cx="-60" cy="-5" rx="12" ry="6" fill="#ff0099" opacity="0.8" filter="url(#neonGlow)"/>
+    <ellipse cx="60" cy="-5" rx="12" ry="6" fill="#ff0099" opacity="0.8" filter="url(#neonGlow)"/>
+
+    <!-- Chibi Robot Torso / Hands -->
+    <rect x="-60" y="70" width="120" height="60" rx="20" fill="url(#botHead)" stroke="#00ff66" stroke-width="3" />
+    <circle cx="0" cy="100" r="14" fill="#00ff66" filter="url(#neonGlow)" />
+
+    <!-- Chibi Hands holding a mini card -->
+    <ellipse cx="-65" cy="95" rx="12" ry="12" fill="#00ff66" />
+    <ellipse cx="65" cy="95" rx="12" ry="12" fill="#00ff66" />
+  </g>
+
+  <!-- Banner Badge Overlay -->
+  <rect x="100" y="420" width="300" height="45" rx="22" fill="#00ff66" filter="url(#neonGlow)"/>
+  <text x="250" y="448" font-family="sans-serif" font-weight="900" font-size="16" text-anchor="middle" fill="#04120a" letter-spacing="2">🤖 CHIBI AI BOT PRACTICE</text>
+</svg>

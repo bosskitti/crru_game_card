@@ -1,0 +1,49 @@
+[
+  {
+    "id": "cyber_threat_core",
+    "name": "ตู้ CYBER THREAT CORE",
+    "icon": "🎲",
+    "cost": 1000,
+    "themeColor": "#ffe600",
+    "desc": "ตู้มาตรฐาน ลุ้นรับเอฟเฟกต์เลเซอร์ทองและสกิน Void Glitch ระดับตำนาน",
+    "items": [
+      { "id": "fx_laser", "name": "⚡ Quantum Laser FX", "type": "ACTION_FX", "rarity": "LEGENDARY", "odds": "1 in 100", "desc": "เอฟเฟกต์แสงเลเซอร์สีทองตอนใช้การ์ด Defuse", "icon": "⚡", "color": "#ffe600", "bgGlow": "rgba(255, 230, 0, 0.4)", "border": "border-[#ffe600]" },
+      { "id": "fx_glitch", "name": "🌌 Void Glitch Skin", "type": "SKIN", "rarity": "LEGENDARY", "odds": "1 in 80", "desc": "สกินการ์ดมัลแวร์มิติหลุมดำระดับตำนาน", "icon": "🌌", "color": "#ffe600", "bgGlow": "rgba(255, 230, 0, 0.4)", "border": "border-[#ffe600]" },
+      { "id": "fx_fire", "name": "🔥 Inferno Scan FX", "type": "ACTION_FX", "rarity": "EPIC", "odds": "1 in 35", "desc": "เอฟเฟกต์ไฟเผาทำลายมัลแวร์ตอนใช้ Scan Virus", "icon": "🔥", "color": "#ff0055", "bgGlow": "rgba(255, 0, 85, 0.4)", "border": "border-[#ff0055]" },
+      { "id": "fx_lightning", "name": "💥 EMP Counter FX", "type": "ACTION_FX", "rarity": "EPIC", "odds": "1 in 25", "desc": "เอฟเฟกต์ฟ้าผ่าช็อตระบบตอนใช้ Eh! Counter", "icon": "💥", "color": "#ff0055", "bgGlow": "rgba(255, 0, 85, 0.4)", "border": "border-[#ff0055]" },
+      { "id": "avatar_fox", "name": "🦊 Cyber Kitsune", "type": "AVATAR", "rarity": "RARE", "odds": "1 in 10", "desc": "อวตารจิ้งจอกไซบอร์กสุดเท่", "icon": "🦊", "color": "#00f0ff", "bgGlow": "rgba(0, 240, 255, 0.4)", "border": "border-[#00f0ff]" },
+      { "id": "sleeve_matrix", "name": "🟢 Matrix Sleeve", "type": "SLEEVE", "rarity": "RARE", "odds": "1 in 10", "desc": "หลังการ์ดลายโค้ดเมทริกซ์สีเขียวเรืองแสง", "icon": "🟢", "color": "#00f0ff", "bgGlow": "rgba(0, 240, 255, 0.4)", "border": "border-[#00f0ff]" },
+      { "id": "coins_bonus_2k", "name": "💰 2,000 Coins", "type": "COINS", "rarity": "COMMON", "odds": "1 in 4", "desc": "ได้รับเหรียญ 2,000 Coins เข้ากระเป๋า", "icon": "💰", "color": "#00ff66", "bgGlow": "rgba(0, 255, 102, 0.3)", "border": "border-[#00ff66]" },
+      { "id": "coins_bonus_1k", "name": "💰 1,000 Coins", "type": "COINS", "rarity": "COMMON", "odds": "1 in 2", "desc": "ได้รับเหรียญ 1,000 Coins คืนทุน", "icon": "💰", "color": "#00ff66", "bgGlow": "rgba(0, 255, 102, 0.3)", "border": "border-[#00ff66]" }
+    ]
+  },
+  {
+    "id": "neon_arsenal_special",
+    "name": "ตู้ NEON SAMURAI ARSENAL",
+    "icon": "🗡️",
+    "cost": 2500,
+    "themeColor": "#ff0055",
+    "desc": "ตู้พรีเมียมลิมิเต็ด ลุ้นรับอวตาร Neon Samurai และมังกร Cyber Dragon",
+    "items": [
+      { "id": "avatar_samurai", "name": "🗡️ Neon Samurai", "type": "AVATAR", "rarity": "LEGENDARY", "odds": "1 in 50", "desc": "อวตารซามูไรนีออนสุดแรร์", "icon": "🗡️", "color": "#ffe600", "bgGlow": "rgba(255, 230, 0, 0.4)", "border": "border-[#ffe600]" },
+      { "id": "avatar_dragon", "name": "🐉 Cyber Dragon", "type": "AVATAR", "rarity": "EPIC", "odds": "1 in 20", "desc": "อวตารมังกรไซเบอร์เนติกส์", "icon": "🐉", "color": "#ff0055", "bgGlow": "rgba(255, 0, 85, 0.4)", "border": "border-[#ff0055]" },
+      { "id": "title_zero", "name": "🏆 Zero-Day Title", "type": "TITLE", "rarity": "EPIC", "odds": "1 in 15", "desc": "ฉายาพิเศษ: Zero-Day Hunter", "icon": "🏆", "color": "#ff0055", "bgGlow": "rgba(255, 0, 85, 0.4)", "border": "border-[#ff0055]" },
+      { "id": "sleeve_blood", "name": "🔴 Crimson Sleeve", "type": "SLEEVE", "rarity": "RARE", "odds": "1 in 8", "desc": "หลังการ์ดลายคริมสันแฮกเกอร์สีแดงชาด", "icon": "🔴", "color": "#00f0ff", "bgGlow": "rgba(0, 240, 255, 0.4)", "border": "border-[#00f0ff]" },
+      { "id": "title_master", "name": "⭐ Node Master", "type": "TITLE", "rarity": "RARE", "odds": "1 in 6", "desc": "ฉายาพิเศษ: Node Master", "icon": "⭐", "color": "#00f0ff", "bgGlow": "rgba(0, 240, 255, 0.4)", "border": "border-[#00f0ff]" },
+      { "id": "coins_bonus_5k", "name": "💰 5,000 Coins", "type": "COINS", "rarity": "COMMON", "odds": "1 in 2", "desc": "ได้รับเหรียญ 5,000 Coins กำไร 2 เท่า", "icon": "💰", "color": "#00ff66", "bgGlow": "rgba(0, 255, 102, 0.3)", "border": "border-[#00ff66]" }
+    ]
+  },
+  {
+    "id": "matrix_fortune_pod",
+    "name": "ตู้ CYBER FORTUNE & SLEEVES",
+    "icon": "🎴",
+    "cost": 500,
+    "themeColor": "#00ff66",
+    "desc": "ตู้สุ่มหลังการ์ดและเหรียญรางวัลเริ่มต้น ราคาประหยัด",
+    "items": [
+      { "id": "sleeve_matrix", "name": "🟢 Matrix Sleeve", "type": "SLEEVE", "rarity": "RARE", "odds": "1 in 10", "desc": "หลังการ์ดลายโค้ดเมทริกซ์สีเขียวเรืองแสง", "icon": "🟢", "color": "#00f0ff", "bgGlow": "rgba(0, 240, 255, 0.4)", "border": "border-[#00f0ff]" },
+      { "id": "sleeve_gold", "name": "🟡 Cyber Gold", "type": "SLEEVE", "rarity": "COMMON", "odds": "1 in 3", "desc": "หลังการ์ดลายทองมาตรฐาน", "icon": "🟡", "color": "#00ff66", "bgGlow": "rgba(0, 255, 102, 0.3)", "border": "border-[#00ff66]" },
+      { "id": "coins_bonus_1k", "name": "💰 1,000 Coins", "type": "COINS", "rarity": "COMMON", "odds": "1 in 2", "desc": "ได้รับเหรียญ 1,000 Coins คืนทุน 2 เท่า", "icon": "💰", "color": "#00ff66", "bgGlow": "rgba(0, 255, 102, 0.3)", "border": "border-[#00ff66]" }
+    ]
+  }
+]

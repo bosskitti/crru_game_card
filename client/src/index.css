@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #060814;
+  --bg-surface: #0c0f1d;
+  --bg-elevated: #12162b;
+  --accent-cyan: #00f0ff;
+  --accent-pink: #ff0055;
+  --accent-green: #00ff66;
+  --accent-yellow: #ffe600;
+  --text-main: #c8d1e0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #060814;
+  background-image: 
+    radial-gradient(circle at 50% 20%, rgba(0, 240, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 0, 85, 0.06) 0%, transparent 40%),
+    linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 30px 30px, 30px 30px;
+  background-attachment: fixed;
+  color: #c8d1e0;
+  margin: 0;
+  user-select: none;
+}
+
+/* 3D Game Pushable Buttons */
+.game-btn-green {
+  background: linear-gradient(180deg, #00ff88 0%, #00b359 100%);
+  color: #061a0f;
+  box-shadow: 0 5px 0 #006633, 0 10px 20px rgba(0, 255, 102, 0.4);
+  position: relative;
+  transition: all 0.1s ease;
+}
+.game-btn-green:hover {
+  background: linear-gradient(180deg, #26ff99 0%, #00cc66 100%);
+  box-shadow: 0 5px 0 #006633, 0 12px 25px rgba(0, 255, 102, 0.5);
+}
+.game-btn-green:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #006633, 0 4px 10px rgba(0, 255, 102, 0.3);
+}
+
+.game-btn-yellow {
+  background: linear-gradient(180deg, #ffe600 0%, #ffaa00 100%);
+  color: #2b1c00;
+  box-shadow: 0 5px 0 #996600, 0 10px 20px rgba(255, 204, 0, 0.35);
+  position: relative;
+  transition: all 0.1s ease;
+}
+.game-btn-yellow:hover {
+  background: linear-gradient(180deg, #fff04d 0%, #ffbb1a 100%);
+  box-shadow: 0 5px 0 #996600, 0 12px 25px rgba(255, 204, 0, 0.45);
+}
+.game-btn-yellow:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #996600, 0 4px 10px rgba(255, 204, 0, 0.25);
+}
+
+.game-btn-cyan {
+  background: linear-gradient(180deg, #00f0ff 0%, #0099cc 100%);
+  color: #041420;
+  box-shadow: 0 5px 0 #005577, 0 10px 20px rgba(0, 240, 255, 0.35);
+  position: relative;
+  transition: all 0.1s ease;
+}
+.game-btn-cyan:hover {
+  background: linear-gradient(180deg, #33f3ff 0%, #00b3ee 100%);
+  box-shadow: 0 5px 0 #005577, 0 12px 25px rgba(0, 240, 255, 0.45);
+}
+.game-btn-cyan:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #005577, 0 4px 10px rgba(0, 240, 255, 0.25);
+}
+
+.game-btn-pink {
+  background: linear-gradient(180deg, #ff0055 0%, #b3003b 100%);
+  color: #ffffff;
+  box-shadow: 0 5px 0 #660022, 0 10px 20px rgba(255, 0, 85, 0.35);
+  position: relative;
+  transition: all 0.1s ease;
+}
+.game-btn-pink:hover {
+  background: linear-gradient(180deg, #ff3377 0%, #cc0044 100%);
+  box-shadow: 0 5px 0 #660022, 0 12px 25px rgba(255, 0, 85, 0.45);
+}
+.game-btn-pink:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #660022, 0 4px 10px rgba(255, 0, 85, 0.25);
+}
+
+/* Game Glass Panel with Golden / Cyber trim */
+.game-board-panel {
+  background: linear-gradient(180deg, rgba(20, 26, 50, 0.95) 0%, rgba(10, 14, 30, 0.98) 100%);
+  border: 2px solid #00f0ff;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 15px 35px rgba(0, 0, 0, 0.7),
+    0 0 25px rgba(0, 240, 255, 0.2);
+  position: relative;
+}
+
+/* Glass Reflection Highlight */
+.gloss-overlay {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.02) 50%, transparent 51%);
+  pointer-events: none;
+}
+
+/* Ribbon Header Banner */
+.ribbon-header {
+  background: linear-gradient(180deg, #ffcc00 0%, #ff8800 100%);
+  color: #2b1600;
+  box-shadow: 0 4px 15px rgba(255, 170, 0, 0.5), inset 0 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Hologram Card Shine */
+.card-shine {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 40%, rgba(0, 240, 255, 0.15) 60%, transparent 100%);
+}
+
+/* Animations */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.03); }
+}
+.pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbars with full Touch & Wheel support */
+.custom-scrollbar {
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-y !important;
+  scrollbar-width: thin;
+  scrollbar-color: #ff0055 #0c0f1d;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #080b16;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ff0055;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ff3377;
+}
+
+.scrollable-modal {
+  touch-action: pan-y !important;
+  overscroll-behavior: contain;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Force inputs to have 16px font-size on mobile to prevent iOS Safari auto-zoom */
+@media screen and (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}

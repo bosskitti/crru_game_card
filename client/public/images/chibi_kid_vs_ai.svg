@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgKidAi" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ff66" stop-opacity="0.3"/>
+      <stop offset="60%" stop-color="#071d14" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#030b08" stop-opacity="0.99"/>
+    </radialGradient>
+    
+    <!-- Neon Glow Filter -->
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <linearGradient id="tableGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff66" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#00ff66" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00ff66" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="500" height="500" rx="30" fill="url(#bgKidAi)" />
+
+  <!-- Cyber Grid background -->
+  <g stroke="#00ff66" stroke-width="1" opacity="0.15">
+    <path d="M0 100 H500 M0 200 H500 M0 300 H500 M0 400 H500" />
+    <path d="M100 0 V500 M200 0 V500 M300 0 V500 M400 0 V500" />
+  </g>
+
+  <!-- CYBER BATTLE TABLE -->
+  <ellipse cx="250" cy="320" rx="210" ry="70" fill="#040e09" stroke="#00ff66" stroke-width="3" filter="url(#glowGreen)"/>
+  <ellipse cx="250" cy="320" rx="190" ry="55" fill="url(#tableGlow)"/>
+
+  <!-- HOLOGRAPHIC PLAYED CARDS ON TABLE -->
+  <g transform="translate(200, 300) rotate(-10)">
+    <rect width="45" height="65" rx="8" fill="#00ff66" opacity="0.8" stroke="#ffffff" stroke-width="2"/>
+    <text x="22" y="40" font-size="20" text-anchor="middle">🛡️</text>
+  </g>
+  <g transform="translate(260, 295) rotate(12)">
+    <rect width="45" height="65" rx="8" fill="#ffe600" opacity="0.8" stroke="#ffffff" stroke-width="2"/>
+    <text x="22" y="40" font-size="20" text-anchor="middle">⚡</text>
+  </g>
+
+  <!-- LEFT: CUTE ANIME KID (HUMAN PLAYER) -->
+  <g transform="translate(130, 240)">
+    <!-- Kid Hair (Cyberpunk Hoodie / Hair) -->
+    <path d="M-45 -70 Q0 -110 45 -70 Q55 -20 40 30 Q0 40 -40 30 Z" fill="#2d3748"/>
+    <!-- Head Body -->
+    <circle cx="0" cy="-30" r="42" fill="#ffdbac"/>
+    
+    <!-- Anime Cute Hair Bangs -->
+    <path d="M-42 -40 Q-20 -70 0 -40 Q20 -70 42 -40 L35 -20 Q0 -35 -35 -20 Z" fill="#1a202c"/>
+
+    <!-- Cyber Headset -->
+    <rect x="-48" y="-40" width="12" height="24" rx="4" fill="#00ff66" filter="url(#glowGreen)"/>
+    <rect x="36" y="-40" width="12" height="24" rx="4" fill="#00ff66" filter="url(#glowGreen)"/>
+    <path d="M-42 -42 Q0 -75 42 -42" stroke="#00ff66" stroke-width="4" fill="none"/>
+
+    <!-- Kawaii Eyes -->
+    <ellipse cx="-16" cy="-30" rx="8" ry="12" fill="#1a202c"/>
+    <circle cx="-18" cy="-34" r="3" fill="#ffffff"/>
+    <ellipse cx="16" cy="-30" rx="8" ry="12" fill="#1a202c"/>
+    <circle cx="14" cy="-34" r="3" fill="#ffffff"/>
+
+    <!-- Happy Smile & Blush -->
+    <path d="M-8 -12 Q0 -4 8 -12" stroke="#e53e3e" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-26" cy="-18" rx="7" ry="4" fill="#feb2b2"/>
+    <ellipse cx="26" cy="-18" rx="7" ry="4" fill="#feb2b2"/>
+
+    <!-- Cute Hoodie Body holding Cards -->
+    <path d="M-35 15 L35 15 L45 80 L-45 80 Z" fill="#00ff66" filter="url(#glowGreen)"/>
+    
+    <!-- Kid's Hand holding Cards -->
+    <g transform="translate(-10, 20) rotate(-15)">
+      <rect width="25" height="40" rx="5" fill="#ffffff" stroke="#00ff66" stroke-width="2"/>
+      <text x="12" y="25" font-size="14" text-anchor="middle">🎴</text>
+    </g>
+    <g transform="translate(5, 18) rotate(10)">
+      <rect width="25" height="40" rx="5" fill="#ffffff" stroke="#00ff66" stroke-width="2"/>
+      <text x="12" y="25" font-size="14" text-anchor="middle">🛡️</text>
+    </g>
+  </g>
+
+  <!-- RIGHT: CUTE FRIENDLY AI ROBOT -->
+  <g transform="translate(370, 230)">
+    <!-- Antenna -->
+    <line x1="0" y1="-85" x2="0" y2="-60" stroke="#00ff66" stroke-width="4" filter="url(#glowGreen)"/>
+    <circle cx="0" cy="-90" r="8" fill="#00ff66" filter="url(#glowGreen)"/>
+
+    <!-- Robot Head -->
+    <rect x="-50" y="-60" width="100" height="80" rx="20" fill="#0b2819" stroke="#00ff66" stroke-width="3" filter="url(#glowGreen)"/>
+    <!-- Visor -->
+    <rect x="-38" y="-48" width="76" height="54" rx="14" fill="#030d07"/>
+
+    <!-- Glowing Robot Eyes -->
+    <ellipse cx="-18" cy="-24" rx="10" ry="14" fill="#00ff66" filter="url(#glowGreen)"/>
+    <circle cx="-21" cy="-28" r="4" fill="#ffffff"/>
+    <ellipse cx="18" cy="-24" rx="10" ry="14" fill="#00ff66" filter="url(#glowGreen)"/>
+    <circle cx="15" cy="-28" r="4" fill="#ffffff"/>
+    
+    <!-- Robot Happy Mouth -->
+    <path d="M-10 -6 Q0 4 10 -6" stroke="#00ff66" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- Robot Body holding Cards -->
+    <rect x="-35" y="25" width="70" height="55" rx="14" fill="#0b2819" stroke="#00ff66" stroke-width="3"/>
+    
+    <!-- Robot Hand holding Cards -->
+    <g transform="translate(-25, 30) rotate(-20)">
+      <rect width="24" height="38" rx="4" fill="#00ff66" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="12" y="24" font-size="12" text-anchor="middle">⚡</text>
+    </g>
+  </g>
+
+  <!-- VS BADGE IN CENTER -->
+  <circle cx="250" cy="220" r="24" fill="#ffe600" filter="url(#glowGreen)"/>
+  <text x="250" y="227" font-family="sans-serif" font-weight="900" font-size="16" text-anchor="middle" fill="#030b08">VS</text>
+
+  <!-- Banner Overlay Badge -->
+  <rect x="80" y="425" width="340" height="42" rx="21" fill="#00ff66" filter="url(#glowGreen)"/>
+  <text x="250" y="451" font-family="sans-serif" font-weight="900" font-size="15" text-anchor="middle" fill="#030b08" letter-spacing="1">🧒 KID VS AI ROBOT CARD DUEL 🤖</text>
+</svg>

@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgAnimeMulti" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#091b28" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#030a10" stop-opacity="0.99"/>
+    </radialGradient>
+    
+    <!-- Neon Glow Filter -->
+    <filter id="glowCyanAnime" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glowPinkAnime" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <linearGradient id="eyeCyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0080ff"/>
+    </linearGradient>
+
+    <linearGradient id="eyePink" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f"/>
+      <stop offset="100%" stop-color="#99004d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="500" rx="30" fill="url(#bgAnimeMulti)" />
+
+  <!-- Cyber Grid -->
+  <g stroke="#00f0ff" stroke-width="1" opacity="0.15">
+    <path d="M0 100 H500 M0 200 H500 M0 300 H500 M0 400 H500" />
+    <path d="M100 0 V500 M200 0 V500 M300 0 V500 M400 0 V500" />
+  </g>
+
+  <!-- LEFT: CUTE ANIME BOY GAMER (CYAN HEADSET) -->
+  <g transform="translate(130, 240)">
+    <!-- Hair Spikes -->
+    <path d="M-55 -40 Q-25 -90 0 -55 Q25 -90 55 -40 L45 -10 Q0 -35 -45 -10 Z" fill="#1a365d"/>
+    
+    <!-- Head & Face -->
+    <path d="M-45 -50 Q0 -80 45 -50 Q55 10 0 50 Q-55 10 -45 -50 Z" fill="#fff0e6"/>
+
+    <!-- Headset Cyan -->
+    <rect x="-54" y="-35" width="12" height="24" rx="4" fill="#00f0ff" filter="url(#glowCyanAnime)"/>
+    <rect x="42" y="-35" width="12" height="24" rx="4" fill="#00f0ff" filter="url(#glowCyanAnime)"/>
+    <path d="M-48 -35 Q0 -70 48 -35" stroke="#00f0ff" stroke-width="4" fill="none"/>
+
+    <!-- Eyes Cyan -->
+    <g transform="translate(-20, -15)">
+      <ellipse cx="0" cy="0" rx="12" ry="18" fill="#1a202c"/>
+      <ellipse cx="0" cy="2" rx="10" ry="14" fill="url(#eyeCyan)" />
+      <circle cx="-4" cy="-6" r="4" fill="#ffffff"/>
+    </g>
+
+    <g transform="translate(20, -15)">
+      <ellipse cx="0" cy="0" rx="12" ry="18" fill="#1a202c"/>
+      <ellipse cx="0" cy="2" rx="10" ry="14" fill="url(#eyeCyan)" />
+      <circle cx="-4" cy="-6" r="4" fill="#ffffff"/>
+    </g>
+
+    <!-- Smile & Blush -->
+    <path d="M-8 10 Q0 18 8 10" stroke="#dd6b20" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-25" cy="5" rx="7" ry="4" fill="#fbd38d"/>
+    <ellipse cx="25" cy="5" rx="7" ry="4" fill="#fbd38d"/>
+
+    <!-- Jacket & Card -->
+    <path d="M-38 35 L38 35 L48 120 L-48 120 Z" fill="#092032" stroke="#00f0ff" stroke-width="3" filter="url(#glowCyanAnime)"/>
+    
+    <g transform="translate(-10, 45) rotate(-10)">
+      <rect width="28" height="42" rx="5" fill="#00f0ff" opacity="0.9" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="14" y="26" font-size="16" text-anchor="middle">🗡️</text>
+    </g>
+  </g>
+
+  <!-- CENTER VS SPARK -->
+  <g transform="translate(250, 210)">
+    <circle cx="0" cy="0" r="32" fill="#ff007f" filter="url(#glowPinkAnime)" />
+    <circle cx="0" cy="0" r="25" fill="#030a10" stroke="#00f0ff" stroke-width="2.5" />
+    <text x="0" y="7" font-family="sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#ffffff" filter="url(#glowCyanAnime)">VS</text>
+  </g>
+
+  <!-- RIGHT: CUTE ANIME GIRL GAMER (PINK HEADSET) -->
+  <g transform="translate(370, 240)">
+    <!-- Long Hair -->
+    <path d="M-55 -40 Q-70 20 -50 70 Q-40 0 -40 -30 Z" fill="#9b2c2c"/>
+    <path d="M55 -40 Q70 20 50 70 Q40 0 40 -30 Z" fill="#9b2c2c"/>
+
+    <!-- Head & Face -->
+    <path d="M-45 -50 Q0 -80 45 -50 Q55 10 0 50 Q-55 10 -45 -50 Z" fill="#fff0e6"/>
+
+    <!-- Bangs -->
+    <path d="M-42 -40 Q-20 -70 0 -45 Q20 -70 42 -40 L35 -20 Q0 -40 -35 -20 Z" fill="#c53030"/>
+
+    <!-- Headset Pink -->
+    <rect x="-54" y="-35" width="12" height="24" rx="4" fill="#ff007f" filter="url(#glowPinkAnime)"/>
+    <rect x="42" y="-35" width="12" height="24" rx="4" fill="#ff007f" filter="url(#glowPinkAnime)"/>
+    <path d="M-48 -35 Q0 -70 48 -35" stroke="#ff007f" stroke-width="4" fill="none"/>
+
+    <!-- Eyes Pink -->
+    <g transform="translate(-20, -15)">
+      <ellipse cx="0" cy="0" rx="12" ry="18" fill="#1a202c"/>
+      <ellipse cx="0" cy="2" rx="10" ry="14" fill="url(#eyePink)" />
+      <circle cx="-4" cy="-6" r="4" fill="#ffffff"/>
+    </g>
+
+    <g transform="translate(20, -15)">
+      <ellipse cx="0" cy="0" rx="12" ry="18" fill="#1a202c"/>
+      <ellipse cx="0" cy="2" rx="10" ry="14" fill="url(#eyePink)" />
+      <circle cx="-4" cy="-6" r="4" fill="#ffffff"/>
+    </g>
+
+    <!-- Smile & Blush -->
+    <path d="M-8 10 Q0 18 8 10" stroke="#dd6b20" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-25" cy="5" rx="7" ry="4" fill="#feb2b2"/>
+    <ellipse cx="25" cy="5" rx="7" ry="4" fill="#feb2b2"/>
+
+    <!-- Pink Jacket & Card -->
+    <path d="M-38 35 L38 35 L48 120 L-48 120 Z" fill="#32091c" stroke="#ff007f" stroke-width="3" filter="url(#glowPinkAnime)"/>
+    
+    <g transform="translate(-15, 45) rotate(12)">
+      <rect width="28" height="42" rx="5" fill="#ff007f" opacity="0.9" stroke="#ffffff" stroke-width="1.5"/>
+      <text x="14" y="26" font-size="16" text-anchor="middle">💥</text>
+    </g>
+  </g>
+
+  <!-- Banner Badge Overlay -->
+  <rect x="70" y="425" width="360" height="42" rx="21" fill="#00f0ff" filter="url(#glowCyanAnime)"/>
+  <text x="250" y="451" font-family="sans-serif" font-weight="900" font-size="15" text-anchor="middle" fill="#030a10" letter-spacing="1">👧 CUTE ANIME GAMERS PVP DUEL 👦</text>
+</svg>

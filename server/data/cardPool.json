@@ -1,0 +1,12 @@
+[
+  { "id": "phishing", "type": "THREAT", "name": "Phishing Link", "count": 4, "color": "red", "flavor": "SMS claiming tax refund with a malicious link." },
+  { "id": "defuse", "type": "DEFUSE", "name": "Stay Calm (Defuse)", "count": 6, "color": "green", "flavor": "Stop, think, and verify before taking action." },
+  { "id": "counter", "type": "ACTION", "name": "Eh! (Counter)", "count": 5, "color": "darkgreen", "flavor": "Cancel any action or disable card played against you." },
+  { "id": "disable", "type": "ACTION", "name": "Time Rush (Disable)", "count": 5, "color": "purple", "flavor": "Create panic to prevent the target from using Defuse." },
+  { "id": "forward", "type": "ACTION", "name": "Forward Threat", "count": 5, "color": "orange", "flavor": "Pass the drawn threat card to the next player." },
+  { "id": "skip", "type": "ACTION", "name": "Hang Up (Skip)", "count": 5, "color": "blue", "flavor": "End turn immediately without drawing a card." },
+  { "id": "attack", "type": "ACTION", "name": "Pass Risk (Attack)", "count": 5, "color": "blue", "flavor": "End turn and force the next player to draw twice." },
+  { "id": "see_future", "type": "ACTION", "name": "Scan Virus (See Future)", "count": 5, "color": "blue", "flavor": "Peek at the top 3 cards of the deck." },
+  { "id": "shuffle", "type": "ACTION", "name": "Reset System (Shuffle)", "count": 4, "color": "blue", "flavor": "Shuffle the central deck." },
+  { "id": "steal", "type": "ACTION", "name": "Ask for Help (Steal)", "count": 6, "color": "blue", "flavor": "Request 1 card from a target player's hand." }
+]

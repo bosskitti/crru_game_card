@@ -1,0 +1,47 @@
+version: '3.8'
+services:
+  server:
+    build: ./server
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - NODE_ENV=development
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    restart: unless-stopped
+    networks:
+      - ctfd_net
+
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=/
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    command: npm run dev -- --host 0.0.0.0
+    restart: unless-stopped
+    networks:
+      - ctfd_net
+
+  frpc:
+    image: fatedier/frpc:v0.52.3
+    restart: unless-stopped
+    command: ["-c", "/etc/frp/frpc.ini"]
+    volumes:
+      - ./frpc.ini:/etc/frp/frpc.ini
+    networks:
+      - ctfd_net
+    depends_on:
+      - client
+      - server
+
+networks:
+  ctfd_net:
+    name: ctfd_frp-containers
+    external: true

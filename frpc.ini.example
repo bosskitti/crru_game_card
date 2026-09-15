@@ -1,0 +1,18 @@
+[common]
+server_addr = frps
+server_port = 7000
+token = YOUR_SECURE_FRP_TOKEN_HERE
+
+[cyber-card-client]
+type = http
+local_ip = client
+local_port = 3000
+subdomain = game
+locations = /
+
+[cyber-card-server]
+type = http
+local_ip = server
+local_port = 3001
+subdomain = game
+locations = /socket.io/

@@ -36,6 +36,22 @@
 
 ---
 
+## 📸 ภาพตัวอย่างระบบ (Screenshots & Gameplay)
+
+| 1. หน้าแรก (System Interface) | 2. ระบบเข้าสู่ระบบ (Access Deck) |
+|:---:|:---:|
+| ![Landing Page](docs/screenshots/01_landing.png) | ![Auth Modal](docs/screenshots/02_auth_modal.png) |
+
+| 3. โหมดการเล่น & แดชบอร์ด (Game Modes) | 4. คลังการ์ดยุทธวิธี (Card Codex) |
+|:---:|:---:|
+| ![Game Modes](docs/screenshots/03_game_modes.png) | ![Card Codex](docs/screenshots/04_card_codex.png) |
+
+| 5. ตู้สุ่มกาชาพรีเมียม (Cyber Wish / Gacha) | 6. สมรภูมิโต๊ะการ์ดไซเบอร์ (Cyber Table Battle) |
+|:---:|:---:|
+| ![Gacha Shop](docs/screenshots/05_gacha_shop.png) | ![Battle Arena](docs/screenshots/06_battle_arena.png) |
+
+---
+
 ## 🏗️ โครงสร้างระบบ (Architecture)
 
 ```

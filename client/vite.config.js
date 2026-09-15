@@ -10,7 +10,7 @@ export default defineConfig({
     allowedHosts: ['game.crrulearnctf.xyz', 'all'],
     proxy: {
       '/socket.io': {
-        target: 'http://server:3001',
+        target: process.env.VITE_SERVER_URL || 'http://localhost:3001',
         ws: true,
         changeOrigin: true
       }
